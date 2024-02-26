@@ -49,6 +49,8 @@ if(isHit&isAlive){
 		}	
 		
 	}
+	
+
 
 if(!isAlive){
 timer_dying--;

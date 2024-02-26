@@ -62,8 +62,31 @@ if(useGun){
 		myGun.image_yscale=-1;
 	}else{myGun.image_yscale=1;}
 }
+
+	if(isPush){
+	timer_pushing--;
+	speed=4;
+	if(useGun){myGun.speed=4;}
+	obj_camera.speed=4;
+	if(timer_pushing<0){
+	speed=0;
+	if(useGun){myGun.speed=0;}
+	obj_camera.speed=0;
+	timer_pushing=room_speed*0.4;
+	isPush=false;
+	}
+	
+	}
+	
 if(place_meeting(x,y,obj_wall)){
-	if(!place_meeting(_keep_x,_keep_y,obj_wall)){
+	if(isPush){
+	speed*=-1;
+	if(useGun){
+	myGun.speed*=-1;
+	}
+	obj_camera.speed*=-1;
+	}
+	else if(!place_meeting(_keep_x,_keep_y,obj_wall)){
 	x=_keep_x;
 	y=_keep_y;
 	myGun.x=keepGun_x;
