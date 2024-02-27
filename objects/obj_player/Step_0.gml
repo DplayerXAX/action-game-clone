@@ -13,6 +13,7 @@ if(isAlive){
 depth=-y;
 myGun.depth=depth-1;*/
 if(keyboard_check(ord("W"))){
+
 y-=3;
 myGun.y-=3;
 obj_camera.y-=3;
@@ -50,6 +51,7 @@ else{
 	bullet.image_xscale=1.5;
 	bullet.image_yscale=1.5;
 	audio_play_sound(player_shoot,0,false);
+	var shell=instance_create_layer(x,y,"Instances",obj_shell);
 	timer_shooting=room_speed*0.15;
 }
 
@@ -78,15 +80,9 @@ if(useGun){
 	
 	}
 	
-if(place_meeting(x,y,obj_wall)){
-	if(isPush){
-	speed*=-1;
-	if(useGun){
-	myGun.speed*=-1;
-	}
-	obj_camera.speed*=-1;
-	}
-	else if(!place_meeting(_keep_x,_keep_y,obj_wall)){
+if(place_meeting(x,y,obj_wall)){	
+
+	if(!place_meeting(_keep_x,_keep_y,obj_wall)){
 	x=_keep_x;
 	y=_keep_y;
 	myGun.x=keepGun_x;
@@ -100,6 +96,15 @@ if(place_meeting(x,y,obj_airWall)){
 	if(!place_meeting(_keep_x,_keep_y,obj_airWall)){
 	x=_keep_x;
 	y=_keep_y;
+	if(isPush){
+		speed*=-1;
+	if(useGun){myGun.speed*=-1;}
+	obj_camera.speed*=-1;
+	}else{
+		speed=0;
+	if(useGun){myGun.speed=0;}
+	obj_camera.speed=0;
+	}
 	myGun.x=keepGun_x;
 	myGun.y=keepGun_y;
 	obj_camera.x=keepCamera_x;

@@ -2,7 +2,7 @@
 // 你可以在此编辑器中写入代码 
 
 
-HP=5;
+HP=15;
 isShooting=false;
 isSleep=false;
 isPush=false;

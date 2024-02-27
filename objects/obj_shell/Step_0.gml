@@ -2,11 +2,11 @@
 // 你可以在此编辑器中写入代码 
 
 
-timer_fly--;
-if(timer_fly<0){
-speed=0;
-}
 
+timer_flying--;
+if(timer_flying<0){
+speed=0;	
+}
 
 
 

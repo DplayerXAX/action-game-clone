@@ -34,6 +34,7 @@
     {"name":"spr_player_hit2","order":1,"path":"sprites/spr_player_hit2/spr_player_hit2.yy",},
     {"name":"spr_enemy_dying1","order":6,"path":"sprites/spr_enemy_dying1/spr_enemy_dying1.yy",},
     {"name":"obj_airWall","order":9,"path":"objects/obj_airWall/obj_airWall.yy",},
+    {"name":"obj_shell","order":10,"path":"objects/obj_shell/obj_shell.yy",},
     {"name":"spr_playerBullet","order":4,"path":"sprites/spr_playerBullet/spr_playerBullet.yy",},
     {"name":"spr_enemy_dead","order":5,"path":"sprites/spr_enemy_dead/spr_enemy_dead.yy",},
     {"name":"spr_wall","order":6,"path":"sprites/spr_wall/spr_wall.yy",},
