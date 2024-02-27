@@ -29,6 +29,7 @@
     {"name":"spr_enemyBullet","order":4,"path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},
     {"name":"spr_enemy_idle","order":2,"path":"sprites/spr_enemy_idle/spr_enemy_idle.yy",},
     {"name":"obj_enemyBullet","order":3,"path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},
+    {"name":"spr_rock1","order":20,"path":"sprites/spr_rock1/spr_rock1.yy",},
     {"name":"obj_playerBullet","order":2,"path":"objects/obj_playerBullet/obj_playerBullet.yy",},
     {"name":"spr_player_hit2","order":1,"path":"sprites/spr_player_hit2/spr_player_hit2.yy",},
     {"name":"spr_enemy_dying1","order":6,"path":"sprites/spr_enemy_dying1/spr_enemy_dying1.yy",},
@@ -47,7 +48,10 @@
     {"name":"spr_effect","order":10,"path":"sprites/spr_effect/spr_effect.yy",},
     {"name":"obj_enemy","order":1,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"spr_gun","order":4,"path":"sprites/spr_gun/spr_gun.yy",},
+    {"name":"spr_rock3","order":22,"path":"sprites/spr_rock3/spr_rock3.yy",},
+    {"name":"spr_rock2","order":21,"path":"sprites/spr_rock2/spr_rock2.yy",},
     {"name":"player_shoot","order":1,"path":"sounds/player_shoot/player_shoot.yy",},
+    {"name":"spr_shadow","order":7,"path":"sprites/spr_shadow/spr_shadow.yy",},
     {"name":"spr_player_dying","order":5,"path":"sprites/spr_player_dying/spr_player_dying.yy",},
   ],
 }
