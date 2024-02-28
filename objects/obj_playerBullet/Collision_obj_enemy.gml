@@ -24,6 +24,4 @@ other.enemyGun.direction=direction;
 
 
 instance_destroy();
-
-
 }

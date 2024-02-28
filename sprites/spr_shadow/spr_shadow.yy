@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "player",
-    "path": "folders/精灵/player.yy",
+    "name": "精灵",
+    "path": "folders/精灵.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -59,8 +59,8 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 28,
-    "yorigin": 32,
+    "xorigin": 30,
+    "yorigin": 34,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

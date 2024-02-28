@@ -1,7 +1,7 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-
+randomize();
 hp=5;
 isHit=false;
 timer_hurt=room_speed*0.1;

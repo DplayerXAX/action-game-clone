@@ -3,7 +3,6 @@
 
 
 
-
 if(x<0){
 x=0
 }else if(x>1366){
@@ -36,4 +35,10 @@ if(shakeScreen){
 	decideRandom=false;
 	}
 
+}
+
+if(blackBarExist){
+	layer_sequence_x(endingSequence,x+0.2*difference_x);
+	layer_sequence_y(endingSequence,y+0.2*difference_y);
+	
 }

@@ -30,5 +30,5 @@
     "path": "sprites/spr_airWall/spr_airWall.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

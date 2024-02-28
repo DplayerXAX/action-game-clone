@@ -7,6 +7,7 @@ destroyEffect.image_angle=direction;
 
 with(other){
 isHit=true;
+isSleep=true;
 isPush=true;
 HP-=1;
 }

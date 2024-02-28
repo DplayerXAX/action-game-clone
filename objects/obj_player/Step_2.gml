@@ -49,7 +49,13 @@ if(isHit&isAlive){
 		}	
 		
 	}
-	
+if(isSleep){
+timer_sleeping--;
+if(timer_sleeping<0){
+	timer_sleeping=room_speed*0.2;
+	isSleep=false;
+	}	
+}
 
 
 if(!isAlive){
@@ -57,5 +63,11 @@ timer_dying--;
 sprite_index=spr_player_dying;
 if(timer_dying<0){
 sprite_index=spr_player_dead;
+if(!blackBarExist){endingSequence=layer_sequence_create("Bullets",x,y,blackBar);}
+blackBarExist=true;
+
 }
 }
+
+shadow.x=x;
+shadow.y=y;
