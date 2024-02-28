@@ -4,10 +4,11 @@
 
 
 timer_flying--;
-image_angle+=irandom(180);
+
 if(timer_flying<0){
-image_angle=0;
 speed=0;	
+}else{
+image_angle+=irandom(180);
 }
 
 
