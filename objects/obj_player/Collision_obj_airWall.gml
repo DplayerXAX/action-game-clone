@@ -3,11 +3,15 @@
 
 
 
+
+
 speed=0;
 	if(useGun){
 	myGun.speed*=0;
 	}
 	obj_camera.speed*=0;
+
+
 
 
 

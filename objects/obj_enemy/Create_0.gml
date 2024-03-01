@@ -22,7 +22,7 @@ decideDirection=false;
 shutDown=false;
 timer_shutDown=room_speed*0.5;
 enemyGun=instance_create_layer(x-2,y,"Guns",obj_gun);
-
+enemyShadow=instance_create_layer(x-1,y+3,"shadow",obj_shadow);
 
 enum state{
 moveShoot,

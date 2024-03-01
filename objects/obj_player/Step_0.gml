@@ -2,38 +2,28 @@
 playerDirection = point_direction(obj_player.x ,obj_player.y , mouse_x , mouse_y );
 var _keep_x=x;
 var _keep_y=y;
-if(useGun){
-var keepGun_x=myGun.x;
-var keepGun_y=myGun.y;
-}
+
 var keepCamera_x=obj_camera.x;
 var keepCamera_y=obj_camera.y;
 if(isAlive&&!isSleep){
-/*
-depth=-y;
-myGun.depth=depth-1;*/
 if(keyboard_check(ord("W"))){
 
 y-=3;
-myGun.y-=3;
 obj_camera.y-=3;
 
 }
  if(keyboard_check(ord("S"))){
 y+=3;
-myGun.y+=3;
 obj_camera.y+=3;
 
 }
 if(keyboard_check(ord("A"))){
 x-=3;
-myGun.x-=3;
 obj_camera.x-=3;
 image_xscale=-1;
 
 }
 if(keyboard_check(ord("D"))){
-myGun.x+=3;
 x+=3;
 obj_camera.x+=3;
 image_xscale=1;
@@ -81,41 +71,25 @@ if(useGun){
 	}
 	
 if(place_meeting(x,y,obj_wall)){	
-	speed*=-1;
-	if(useGun){
-	myGun.speed*=-1;
-	}
-	obj_camera.speed*=-1;
+	speed=0;
+	if(useGun){myGun.speed=0;}
+	obj_camera.speed=0;
 
 	if(!place_meeting(_keep_x,_keep_y,obj_wall)){
 	x=_keep_x;
 	y=_keep_y;
-	myGun.x=keepGun_x;
-	myGun.y=keepGun_y;
 	obj_camera.x=keepCamera_x;
 	obj_camera.y=keepCamera_y;
 	}
 }
 
 if(place_meeting(x,y,obj_airWall)){
-	speed*=-1;
-	if(useGun){
-	myGun.speed*=-1;}
-	obj_camera.speed*=-1;
+	speed=0;
+	if(useGun){myGun.speed=0;}
+	obj_camera.speed=0;
 	if(!place_meeting(_keep_x,_keep_y,obj_airWall)){
 	x=_keep_x;
 	y=_keep_y;
-	if(isPush){
-		speed*=-1;
-	if(useGun){myGun.speed*=-1;}
-	obj_camera.speed*=-1;
-	}else{
-		speed=0;
-	if(useGun){myGun.speed=0;}
-	obj_camera.speed=0;
-	}
-	myGun.x=keepGun_x;
-	myGun.y=keepGun_y;
 	obj_camera.x=keepCamera_x;
 	obj_camera.y=keepCamera_y;
 	}

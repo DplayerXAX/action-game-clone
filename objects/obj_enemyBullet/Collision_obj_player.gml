@@ -16,4 +16,3 @@ if(other.useGun){other.myGun.direction=direction;}
 obj_camera.direction=direction;
 instance_destroy();
 
-

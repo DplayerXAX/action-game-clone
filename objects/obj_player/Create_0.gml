@@ -18,6 +18,7 @@ blackBarExist=false;
 var playerDirection;
 isSleep=false;
 myGun=instance_create_layer(x-2,y,"Guns",obj_gun);
+myGun.iBelong="player";
 shadow=instance_create_layer(x,y,"shadow",obj_shadow);
 useGun=true;
 isHit=false;

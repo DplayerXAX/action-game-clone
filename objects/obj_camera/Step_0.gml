@@ -1,7 +1,8 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-
+x=obj_player.x-194;
+y=obj_player.y-126;
 
 if(x<0){
 x=0

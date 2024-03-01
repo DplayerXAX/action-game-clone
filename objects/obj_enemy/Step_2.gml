@@ -35,6 +35,7 @@ if(isFly){
 		}	
 //enmey plays dead animation
 if(isDying){
+	instance_destroy(enemyShadow);
 	timer_dying--;
 	if(timer_dying<room_speed*0.5 &&timer_dying>=room_speed*0.4){
 	sprite_index=spr_enemy_dying1;
@@ -45,9 +46,12 @@ if(isDying){
 	}
 	else if(timer_dying<0){
 	current_state=state.dead;
+	
 	isDying=false;
 	}
 
 }
-
-
+if(!isDying && current_state!=state.dead){
+enemyShadow.x=x-1;
+enemyShadow.y=y+3;
+}
